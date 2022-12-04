@@ -1,0 +1,116 @@
+.head-line{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+.head-line svg {
+    width: 430px;
+}
+.menus {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 4px double black;
+}
+.menus button {
+    border: none;
+    background: none;
+    margin: 5px;
+}
+.menus button:hover {
+    background-color: #f1f1f1;
+}
+.news-img-size {
+    max-width: 100%;
+    max-height: 350px;
+}
+.news{
+    border-bottom: 2px solid black;
+}
+.col-lg-8{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 700px){
+    .menus{
+        display: none;
+    }
+}
+
+.searchIcon {
+    color: black;
+    position: relative;
+    right: 7em;
+    float: right;
+    top: 1em;
+}
+
+.searchIcon:hover {
+    background-color: beige;
+    color: red;
+}
+
+.sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sideNav a {
+    text-decoration: none;
+    color: #818181;
+    transition: 0.5s;
+}
+.sideNav button {
+    background: none;
+    border: none;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sideNav a:hover {
+    color: #f1f1f1;
+}
+.sideNav button:hover{
+    color: red;
+}
+
+.sideNav .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 44px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sideNav {padding-top: 15px;}
+    .sideNav a {font-size: 18px;}
+}
+@media screen and (min-width: 700px) {
+    .sideNav {
+        display: none;
+    }
+    span {
+        display: none;
+    }
+}
