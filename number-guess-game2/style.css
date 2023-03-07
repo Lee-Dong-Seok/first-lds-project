@@ -1,0 +1,111 @@
+body{
+    background-color: bisque;
+}
+img{
+    display: block;
+    margin: auto;
+    width: auto;
+}
+.title{
+    font-size: 4.5em;
+    color: red;
+    position: relative;
+    text-align: center;
+    bottom: 5.5em;
+}
+.box-1{
+    position: relative;
+    text-align: center;
+    bottom: 11em;
+}
+.result-css{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.chance-css{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.input-css{
+    border-radius: 30% 0%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    height: 40px;
+}
+.play-css{
+    margin: 25px;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+.play-css:hover {
+    background-color: #3e8e41
+}
+.play-css:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.reset-css{
+    position: relative;
+    background-color: aqua;
+    border: none;
+    margin-top: 40px;
+    border-radius: 25% 10%;
+    font-size: 28px;
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+.reset-css:after {
+    content: "";
+    background: #57bbf1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 1s
+}
+.reset-css:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+@media(max-width:650px){
+    .title{
+        font-size: 3em;
+        color: blue;
+        position: relative;
+        text-align: center;
+        bottom: 4em;
+        margin: 0;
+        padding: 0;
+    }
+    .box-1{
+        position: relative;
+        bottom: 0em;
+    }
+    img{
+        width: 375px;
+    }
+}
